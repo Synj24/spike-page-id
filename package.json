@@ -1,7 +1,7 @@
 {
   "name": "spike-page-id",
   "description": "generates a css-friendly page identifier from a webpack loader context",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Jeff Escalante",
   "ava": {
     "verbose": "true",
@@ -9,13 +9,13 @@
   },
   "bugs": "https://github.com/static-dev/spike-page-id/issues",
   "devDependencies": {
-    "ava": "^0.19.0",
-    "coveralls": "^2.11.12",
-    "nyc": "^10.0.0",
-    "reshape-standard": "^1.0.0",
-    "snazzy": "^6.0.0",
+    "ava": "^0.24.0",
+    "coveralls": "^3.0.0",
+    "nyc": "^11.4.1",
+    "reshape-standard": "^3.3.0",
+    "snazzy": "^7.0.0",
     "spike-core": "^2.0.0",
-    "standard": "^10.0.0"
+    "standard": "^10.0.3"
   },
   "engines": {
     "node": ">= 6"

@@ -1,18 +1,19 @@
 const pageId = require('..')
 const path = require('path')
-const {readFileSync} = require('fs')
+const { readFileSync } = require('fs')
 const Spike = require('spike-core')
 const htmlStandards = require('reshape-standard')
 const test = require('ava')
 
-test.cb('basic', (t) => {
+test.cb('basic', t => {
   const root = path.join(__dirname, 'example')
   const proj = new Spike({
     root,
-    matchers: { html: '**/*.sgr' },
     entry: { main: [path.join(root, 'main.js')] },
     reshape: htmlStandards({
-      locals: (ctx) => { return { pageId: pageId(ctx) } }
+      locals: ctx => {
+        return { pageId: pageId(ctx) }
+      }
     })
   })
 

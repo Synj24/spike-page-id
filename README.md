@@ -21,7 +21,7 @@ Generates a css-friendly page identifier from a webpack loader context
 In your spike config:
 
 ```js
-const htmlStandards = require('spike-html-standards')
+const htmlStandards = require('reshape-standard')
 const pageId = require('spike-page-id')
 
 module.exports = {
